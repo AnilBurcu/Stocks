@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		18A79D6F2ACAB0CB00ED00E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D6E2ACAB0CB00ED00E0 /* AppDelegate.swift */; };
 		18A79D712ACAB0CB00ED00E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D702ACAB0CB00ED00E0 /* SceneDelegate.swift */; };
-		18A79D732ACAB0CB00ED00E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D722ACAB0CB00ED00E0 /* ViewController.swift */; };
-		18A79D762ACAB0CB00ED00E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A79D742ACAB0CB00ED00E0 /* Main.storyboard */; };
+		18A79D732ACAB0CB00ED00E0 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D722ACAB0CB00ED00E0 /* WatchListViewController.swift */; };
 		18A79D782ACAB0CC00ED00E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A79D772ACAB0CC00ED00E0 /* Assets.xcassets */; };
 		18A79D7B2ACAB0CC00ED00E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A79D792ACAB0CC00ED00E0 /* LaunchScreen.storyboard */; };
+		18A79D882ACAB1B000ED00E0 /* TopStoriesNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D872ACAB1B000ED00E0 /* TopStoriesNewsViewController.swift */; };
+		18A79D8A2ACAB1BA00ED00E0 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D892ACAB1BA00ED00E0 /* SearchResultsViewController.swift */; };
+		18A79D8C2ACAB1C900ED00E0 /* StockDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D8B2ACAB1C900ED00E0 /* StockDetailsViewController.swift */; };
+		18A79D8E2ACAB3DB00ED00E0 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D8D2ACAB3DB00ED00E0 /* APICaller.swift */; };
+		18A79D902ACAB3EE00ED00E0 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D8F2ACAB3EE00ED00E0 /* PersistenceManager.swift */; };
+		18A79D922ACAB3F800ED00E0 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D912ACAB3F800ED00E0 /* HapticsManager.swift */; };
+		18A79D942ACABDAB00ED00E0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D932ACABDAB00ED00E0 /* Extensions.swift */; };
+		18A79D962ACAC99900ED00E0 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D952ACAC99900ED00E0 /* SearchResultTableViewCell.swift */; };
+		18A79D982ACAD21E00ED00E0 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A79D972ACAD21E00ED00E0 /* SearchResponse.swift */; };
+		EC4F5350812FEF2766A5606B /* Pods_Stocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E695DBD3A97F4664F433F89 /* Pods_Stocks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18A79D6B2ACAB0CB00ED00E0 /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A79D6E2ACAB0CB00ED00E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A79D702ACAB0CB00ED00E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18A79D722ACAB0CB00ED00E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18A79D752ACAB0CB00ED00E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A79D722ACAB0CB00ED00E0 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		18A79D772ACAB0CC00ED00E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A79D7A2ACAB0CC00ED00E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A79D7C2ACAB0CC00ED00E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A79D872ACAB1B000ED00E0 /* TopStoriesNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesNewsViewController.swift; sourceTree = "<group>"; };
+		18A79D892ACAB1BA00ED00E0 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		18A79D8B2ACAB1C900ED00E0 /* StockDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewController.swift; sourceTree = "<group>"; };
+		18A79D8D2ACAB3DB00ED00E0 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		18A79D8F2ACAB3EE00ED00E0 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		18A79D912ACAB3F800ED00E0 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		18A79D932ACABDAB00ED00E0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		18A79D952ACAC99900ED00E0 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		18A79D972ACAD21E00ED00E0 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		1E695DBD3A97F4664F433F89 /* Pods_Stocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE58BF3E0234D817EAD0C69 /* Pods-Stocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks.release.xcconfig"; path = "Target Support Files/Pods-Stocks/Pods-Stocks.release.xcconfig"; sourceTree = "<group>"; };
+		3D3CC8531AC599CEE33DECA7 /* Pods-Stocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks.debug.xcconfig"; path = "Target Support Files/Pods-Stocks/Pods-Stocks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4F5350812FEF2766A5606B /* Pods_Stocks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +63,8 @@
 			children = (
 				18A79D6D2ACAB0CB00ED00E0 /* Stocks */,
 				18A79D6C2ACAB0CB00ED00E0 /* Products */,
+				9829520438B41009350AE94E /* Pods */,
+				3AA9BE5DC18FD9A32ADFCAED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,80 @@
 		18A79D6D2ACAB0CB00ED00E0 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
-				18A79D6E2ACAB0CB00ED00E0 /* AppDelegate.swift */,
-				18A79D702ACAB0CB00ED00E0 /* SceneDelegate.swift */,
-				18A79D722ACAB0CB00ED00E0 /* ViewController.swift */,
-				18A79D742ACAB0CB00ED00E0 /* Main.storyboard */,
-				18A79D772ACAB0CC00ED00E0 /* Assets.xcassets */,
-				18A79D792ACAB0CC00ED00E0 /* LaunchScreen.storyboard */,
+				18A79D862ACAB11B00ED00E0 /* Other */,
+				18A79D852ACAB11700ED00E0 /* Managers */,
+				18A79D842ACAB10A00ED00E0 /* Controllers */,
+				18A79D832ACAB10400ED00E0 /* Views */,
+				18A79D822ACAB0FB00ED00E0 /* Models */,
 				18A79D7C2ACAB0CC00ED00E0 /* Info.plist */,
 			);
 			path = Stocks;
+			sourceTree = "<group>";
+		};
+		18A79D822ACAB0FB00ED00E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18A79D972ACAD21E00ED00E0 /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18A79D832ACAB10400ED00E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18A79D792ACAB0CC00ED00E0 /* LaunchScreen.storyboard */,
+				18A79D952ACAC99900ED00E0 /* SearchResultTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18A79D842ACAB10A00ED00E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18A79D722ACAB0CB00ED00E0 /* WatchListViewController.swift */,
+				18A79D872ACAB1B000ED00E0 /* TopStoriesNewsViewController.swift */,
+				18A79D892ACAB1BA00ED00E0 /* SearchResultsViewController.swift */,
+				18A79D8B2ACAB1C900ED00E0 /* StockDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18A79D852ACAB11700ED00E0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				18A79D8D2ACAB3DB00ED00E0 /* APICaller.swift */,
+				18A79D8F2ACAB3EE00ED00E0 /* PersistenceManager.swift */,
+				18A79D912ACAB3F800ED00E0 /* HapticsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		18A79D862ACAB11B00ED00E0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18A79D772ACAB0CC00ED00E0 /* Assets.xcassets */,
+				18A79D6E2ACAB0CB00ED00E0 /* AppDelegate.swift */,
+				18A79D702ACAB0CB00ED00E0 /* SceneDelegate.swift */,
+				18A79D932ACABDAB00ED00E0 /* Extensions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3AA9BE5DC18FD9A32ADFCAED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E695DBD3A97F4664F433F89 /* Pods_Stocks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9829520438B41009350AE94E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D3CC8531AC599CEE33DECA7 /* Pods-Stocks.debug.xcconfig */,
+				2DE58BF3E0234D817EAD0C69 /* Pods-Stocks.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A79D7F2ACAB0CC00ED00E0 /* Build configuration list for PBXNativeTarget "Stocks" */;
 			buildPhases = (
+				FE050F8E9BD2A40740F8707A /* [CP] Check Pods Manifest.lock */,
 				18A79D672ACAB0CB00ED00E0 /* Sources */,
 				18A79D682ACAB0CB00ED00E0 /* Frameworks */,
 				18A79D692ACAB0CB00ED00E0 /* Resources */,
+				8600739DA6F113EF64402811 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +217,76 @@
 			files = (
 				18A79D7B2ACAB0CC00ED00E0 /* LaunchScreen.storyboard in Resources */,
 				18A79D782ACAB0CC00ED00E0 /* Assets.xcassets in Resources */,
-				18A79D762ACAB0CB00ED00E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8600739DA6F113EF64402811 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stocks/Pods-Stocks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stocks/Pods-Stocks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stocks/Pods-Stocks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE050F8E9BD2A40740F8707A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stocks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18A79D672ACAB0CB00ED00E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A79D732ACAB0CB00ED00E0 /* ViewController.swift in Sources */,
+				18A79D922ACAB3F800ED00E0 /* HapticsManager.swift in Sources */,
+				18A79D962ACAC99900ED00E0 /* SearchResultTableViewCell.swift in Sources */,
+				18A79D8C2ACAB1C900ED00E0 /* StockDetailsViewController.swift in Sources */,
+				18A79D732ACAB0CB00ED00E0 /* WatchListViewController.swift in Sources */,
+				18A79D882ACAB1B000ED00E0 /* TopStoriesNewsViewController.swift in Sources */,
+				18A79D902ACAB3EE00ED00E0 /* PersistenceManager.swift in Sources */,
+				18A79D942ACABDAB00ED00E0 /* Extensions.swift in Sources */,
+				18A79D8E2ACAB3DB00ED00E0 /* APICaller.swift in Sources */,
+				18A79D982ACAD21E00ED00E0 /* SearchResponse.swift in Sources */,
 				18A79D6F2ACAB0CB00ED00E0 /* AppDelegate.swift in Sources */,
 				18A79D712ACAB0CB00ED00E0 /* SceneDelegate.swift in Sources */,
+				18A79D8A2ACAB1BA00ED00E0 /* SearchResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18A79D742ACAB0CB00ED00E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18A79D752ACAB0CB00ED00E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18A79D792ACAB0CC00ED00E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,19 +419,22 @@
 		};
 		18A79D802ACAB0CC00ED00E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3CC8531AC599CEE33DECA7 /* Pods-Stocks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V834C37N47;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stocks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,27 +442,32 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AnlBRC.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		18A79D812ACAB0CC00ED00E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE58BF3E0234D817EAD0C69 /* Pods-Stocks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V834C37N47;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stocks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +475,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AnlBRC.Stocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
