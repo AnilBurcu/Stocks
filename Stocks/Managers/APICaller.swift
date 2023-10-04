@@ -15,7 +15,7 @@ final class APICaller {
         static let apiKey = "ckd9b01r01qg61btsmjgckd9b01r01qg61btsmk0"
         static let secretKey = "ckd9b01r01qg61btsml0"
         static let baseUrl = "https://finnhub.io/api/v1/"
-        
+        static let day: TimeInterval = 3600 * 24
     }
     
     private init(){}
@@ -40,12 +40,70 @@ final class APICaller {
     
     //MARK: - Get Stock Info
     
+    /// Get news for type
+    /// - Parameters:
+    ///   - type: Company or top stories
+    ///   - completion: Result callback
+    public func news(
+        for type: NewsViewController.`Type`,
+        completion: @escaping (Result<[NewsStory], Error>) -> Void
+    ) {
+        switch type {
+        case .topStories:
+            request(
+                url: url(for: .topStories, queryParams: ["category": "general"]),
+                expecting: [NewsStory].self,
+                completion: completion
+            )
+        case .company(let symbol):
+            let today = Date()
+            let oneMonthBack = today.addingTimeInterval(-(Constants.day * 7))
+            request(
+                url: url(
+                    for: .companyNews,
+                    queryParams: [
+                        "symbol": symbol,
+                        "from": DateFormatter.newsDateFormatter.string(from: oneMonthBack),
+                        "to": DateFormatter.newsDateFormatter.string(from: today)
+                    ] //tarihi YYY-MM-DD formatinda istediği için extension ile ayarlıyoruz
+                ),
+                expecting: [NewsStory].self,
+                completion: completion
+            )
+        }
+    }
+    
     //MARK: - Search Stocks
+    
+    public func marketData(
+        for symbol: String,
+        numberOfDays: TimeInterval = 7,
+        completion: @escaping (Result<MarketDataResponse, Error>) -> Void
+    ) {
+        let today = Date().addingTimeInterval(-(Constants.day))
+        let prior = today.addingTimeInterval(-(Constants.day * numberOfDays))
+        request(
+            url: url(
+                for: .marketData,
+                queryParams: [
+                    "symbol": symbol,
+                    "resolution": "1",
+                    "from": "\(Int(prior.timeIntervalSince1970))",
+                    "to": "\(Int(today.timeIntervalSince1970))"
+                ]
+            ),
+            expecting: MarketDataResponse.self,
+            completion: completion
+        )
+    }
     
     //MARK: - Private
     
     private enum Endpoint: String {
         case search
+        case topStories = "news"
+        case companyNews = "company-news"
+        case marketData = "stock/candle"
     }
     private enum APIError: Error {
         case noDataReturned
