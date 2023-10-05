@@ -112,7 +112,7 @@ class WatchListViewController: UIViewController {
                     companyName: UserDefaults.standard.string(forKey: symbol) ?? "Company",
                     price: getLatestClosingPrice(from: candleSticks),
                     changeColor: changePercentage < 0 ? .systemRed : .systemGreen,
-                    changePercentage: .percentage(from: changePercentage), chartViewModel: .init(data: candleSticks.reversed().map{ $0 }, showLegend: false, showAxis: false)
+                    changePercentage: .percentage(from: changePercentage), chartViewModel: .init(data: candleSticks.reversed().map{ $0.close }, showLegend: false, showAxis: false, fillColor: changePercentage < 0 ? .systemRed : .systemGreen)
                     )
                 )
             
@@ -156,6 +156,7 @@ class WatchListViewController: UIViewController {
         panel.set(contentViewController: vc)
         panel.addPanel(toParent: self)
         panel.track(scrollView: vc.tableView)
+        
     }
     
     
