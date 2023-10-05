@@ -97,6 +97,17 @@ final class APICaller {
         )
     }
     
+    public func financialMetrics(
+        for symbol: String,
+        completion: @escaping(Result<FinancialMetricsResponse,Error>)->Void
+    ){
+        let url = url(for: .financials,queryParams: ["symbol":symbol,"metric":"all" ])
+        
+        request(url: url, expecting: FinancialMetricsResponse.self, completion: completion)
+        
+        
+    }
+    
     //MARK: - Private
     
     private enum Endpoint: String {
@@ -104,6 +115,7 @@ final class APICaller {
         case topStories = "news"
         case companyNews = "company-news"
         case marketData = "stock/candle"
+        case financials = "stock/metric"
     }
     private enum APIError: Error {
         case noDataReturned
@@ -131,7 +143,7 @@ final class APICaller {
         
         urlString += "?" + queryItems.map { "\($0.name)=\($0.value ?? "")" }.joined(separator: "&")
         
-            
+        
         print("\n\(urlString)\n")
         
         return URL(string: urlString)
@@ -152,7 +164,7 @@ final class APICaller {
             completion(.failure(APIError.invalidUrl))
             return
         }
-
+        
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data, error == nil else {
                 if let error = error {
@@ -162,7 +174,7 @@ final class APICaller {
                 }
                 return
             }
-
+            
             do {
                 let result = try JSONDecoder().decode(expecting, from: data)
                 completion(.success(result))
@@ -171,7 +183,7 @@ final class APICaller {
                 completion(.failure(error))
             }
         }
-
+        
         task.resume()
     }
 }

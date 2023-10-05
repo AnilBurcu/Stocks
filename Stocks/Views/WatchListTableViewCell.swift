@@ -37,6 +37,7 @@ class WatchListTableViewCell: UITableViewCell {
     //Company Label
     private let nameLabel: UILabel = {
         let label = UILabel()
+        
         label.font = .systemFont(ofSize: 15, weight: .light)
         return label
     }()
@@ -63,6 +64,7 @@ class WatchListTableViewCell: UITableViewCell {
     //MiniChart
     private let miniChartView: StockChartView = {
         let chart = StockChartView()
+        chart.isUserInteractionEnabled = false
         chart.isUserInteractionEnabled = false
         chart.clipsToBounds = true
         return chart
@@ -106,7 +108,7 @@ class WatchListTableViewCell: UITableViewCell {
         nameLabel.frame = CGRect(
             x: separatorInset.left,
             y: symbolLabel.bottom,
-            width: nameLabel.width,
+            width: miniChartView.left-10,
             height: nameLabel.height
         )
 
@@ -158,6 +160,7 @@ class WatchListTableViewCell: UITableViewCell {
         changeLabel.text = viewModel.changePercentage
         changeLabel.backgroundColor = viewModel.changeColor
         //Configure chart
+        miniChartView.configure(with: viewModel.chartViewModel)
     }
 
 }
