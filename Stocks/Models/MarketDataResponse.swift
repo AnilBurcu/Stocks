@@ -2,7 +2,7 @@
 //  MarketDataResponse.swift
 //  Stocks
 //
-//  Created by Anıl Bürcü on 4.10.2023.
+//  Created by AnilBurcu on 4.10.2023.
 //
 
 import Foundation

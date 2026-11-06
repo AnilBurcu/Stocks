@@ -2,7 +2,7 @@
 //  StocksTests.swift
 //  StocksTests
 //
-//  Created by Anıl Bürcü on 6.10.2023.
+//  Created by AnilBurcu on 6.10.2023.
 //
 
 import XCTest

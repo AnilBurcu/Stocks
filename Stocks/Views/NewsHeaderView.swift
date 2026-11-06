@@ -2,7 +2,7 @@
 //  NewsHeaderView.swift
 //  Stocks
 //
-//  Created by Anıl Bürcü on 3.10.2023.
+//  Created by AnilBurcu on 3.10.2023.
 //
 
 import UIKit
